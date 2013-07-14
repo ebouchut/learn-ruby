@@ -1,6 +1,6 @@
 # Learning::Ruby
 
-TODO: Write a gem description
+Learning Ruby using Rspec.
 
 ## Installation
 
