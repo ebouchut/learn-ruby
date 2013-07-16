@@ -4,3 +4,8 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rspec'
+
+group :development do
+  gem 'guard'
+  gem 'guard-rspec'
+end
