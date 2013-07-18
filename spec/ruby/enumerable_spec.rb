@@ -45,6 +45,24 @@ describe "Enumerable" do
     end
   end
 
+  context "#count" do
+    context "if no block  nor parameter is given" do
+      it "count the numbers of items in the numeration" do
+        expect(numbers.count).to eq(4)
+      end
+    end
+    context "when given a parameter (n)" do
+      it "count the number of items in the numeration, for which equals to n" do
+        expect(numbers.count(53)).to eq(1)
+      end 
+    end
+    context "when given a block" do
+      it "count the number of items, for which the block yields a true value" do
+        expect(numbers.count {|n| n < 20}).to eq(2)
+      end
+    end
+  end
+
   context "#find (alias #detect)" do
     context "when given a block" do 
       it "returns the first item for which the block is true" do
