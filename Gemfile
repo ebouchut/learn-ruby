@@ -12,5 +12,5 @@ end
 
 
 group :test do
-  gem rake
+  gem 'rake'
 end
