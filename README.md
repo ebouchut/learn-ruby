@@ -2,7 +2,7 @@
 
 Learning Ruby using Rspec.
 
-[![Build Status](https://travis-ci.org/ebouchut/learning-ruby.png)](https://travis-ci.org/ebouchut/learning-ruby)
+[![Build Status](https://travis-ci.org/ebouchut/learning-ruby.png?branch=master)](https://travis-ci.org/ebouchut/learning-ruby)
 
 ## Installation
 
