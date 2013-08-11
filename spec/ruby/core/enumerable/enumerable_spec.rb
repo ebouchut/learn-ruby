@@ -128,7 +128,12 @@ describe "Enumerable" do
       it "returns the first item for which the block is true" do
         expect(digits.find {|n| n > 5}).to eq(6)
       end
+      it "returns the result of the call to passed in proc of lambda in cases where no object in the collection matches the criteria." do
+      end
     end 
+    context "when no block is given" do
+      it "returns an Enumerator"
+    end
   end
 
 
