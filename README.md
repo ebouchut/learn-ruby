@@ -2,6 +2,8 @@
 
 Learning Ruby using Rspec.
 
+[![Build Status](https://travis-ci.org/ebouchut/learning-ruby.png)](https://travis-ci.org/ebouchut/learning-ruby)
+
 ## Installation
 
 Add this line to your application's Gemfile:
