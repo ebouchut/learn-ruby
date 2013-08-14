@@ -1,7 +1,7 @@
 require_relative "shared/enumerable_shared"
 
 describe "Enumerable#all?" do
-	include_context "Enumerable shared context"
+	include_context "Enumerable shared"
 
 	context "when given a block" do
 		it "return true if the block returns true for all of the items" do
@@ -11,7 +11,7 @@ describe "Enumerable#all?" do
 	end
 
 	context "if no block is given" do
-		it "returns true if non of the items are false or nil" do
+		it "returns true if none of the items are false or nil" do
 			expect(digits.all?).to be_true
 			expect([1, 2, false].all?).to be_false
 			expect([1, 2, nil].all?).to be_false
