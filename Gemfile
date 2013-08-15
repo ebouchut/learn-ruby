@@ -4,6 +4,7 @@ source 'https://rubygems.org'
 gemspec
 
 gem 'rspec'
+gem 'coveralls', require: false
 
 group :development do
   gem 'guard'
@@ -13,5 +14,4 @@ end
 
 group :test do
   gem 'rake'
-  gem 'coveralls', require: false
 end
