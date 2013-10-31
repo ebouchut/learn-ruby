@@ -5,4 +5,4 @@ Learning Ruby using RSpec.
 [![Build Status](https://travis-ci.org/ebouchut/learning-ruby.png?branch=master)](https://travis-ci.org/ebouchut/learning-ruby)
 
 
-[Check out the wiki](wiki/Home)
+[Checkout the wiki](https://github.com/ebouchut/learning-ruby/wiki/Home)
