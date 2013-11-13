@@ -12,6 +12,10 @@ describe "Enumerable#grep" do
     it "when given a regex: returns an array of items maching the passed in regular expression (all items for which: regex === item)" do
       expect(["A", "BC", "DE", "F"].grep(/../)).to eq(["BC", "DE"])
     end
+    
+    it "when given a class: returns an array of items of the specified class" do
+      expect([:symbol, "AB", 123, 4.567e3, "CD"].grep(String)).to eq(["AB", "CD"])
+    end
   end
   
 
@@ -20,6 +24,11 @@ describe "Enumerable#grep" do
       expect(["A", "BC", "DE", "F"].grep(/../) do |two_chars|
         two_chars.downcase
       end).to eq(["bc", "de"])
+
+      # Useful with heterogeneous items to filter out the one we want and can operate on
+      expect([:symbol, "AB", 123, 4.567e3, "CD"].grep(String) do |string|
+        string.downcase
+      end).to eq(["ab", "cd"])
     end
   end
 
