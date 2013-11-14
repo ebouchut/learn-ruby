@@ -19,7 +19,7 @@ describe "Enumerable#cycle" do
       end
 
       context "when also given a parameter (n)" do
-        it "calls the block repeatly n times" do
+        it "cycle n times over the collection of items, calling the block with each item" do
           sum = 0 
           digits.cycle(2) {|n| sum += n}
           expect(sum).to eq(2 * digits.reduce(:+))
