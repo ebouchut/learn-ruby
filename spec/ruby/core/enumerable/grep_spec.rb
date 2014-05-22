@@ -20,7 +20,7 @@ describe "Enumerable#grep" do
   
 
   context "when given a parameter and a block" do
-    it "returns an array. Each matching item (parameter == item) is passed to the block, and the block’s result is stored in the output array." do
+    it "returns an array. Each matching item (parameter == item) is passed to the block, and the block's result is stored in the output array." do
       expect(["A", "BC", "DE", "F"].grep(/../) do |two_chars|
         two_chars.downcase
       end).to eq(["bc", "de"])
