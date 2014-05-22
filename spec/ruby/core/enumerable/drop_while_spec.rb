@@ -14,12 +14,11 @@ describe 'Enumerable#drop_while'  do
 	end
 
 	context "if no block is given" do
-		it "returns an Enumerator" do
+		it "returns an Enumerator, that raises StopIteration the second time next is called" do
 			enumerator = digits.drop_while
 			expect(enumerator).to       be_an_instance_of(Enumerator)
-			digits.each  do |digit|
-				expect(enumerator.next).to eq(digit)
-			end
+			expect(enumerator.next).to eq(digits[0])
+			expect { enumerator.next}.to raise_error(StopIteration)
 		end
 	end
 end
